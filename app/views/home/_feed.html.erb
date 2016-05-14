@@ -1,0 +1,11 @@
+<div class="feed">
+	<h2><%= feed.title %></h2>
+	<div class="author"><%= feed.astronaute %></div>
+	<div class="content"><%= feed.body %></div>
+
+	<div class="comments">
+		<% feed.feedComments.last(5).each do |comment| %>
+			<%= render 'comment', comment: comment %>
+		<% end %>
+	</div>
+</div>
