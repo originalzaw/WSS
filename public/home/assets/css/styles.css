@@ -1,0 +1,94 @@
+#home{
+  height:100vh;
+}
+
+#home h1{
+  color:white;
+  font-family:'Orbitron';
+  font-size:4em;
+  margin-top:20%;
+  text-shadow:1px 2px 2px black;
+  animation-name:title;
+  animation-duration:2s;
+}
+
+#home h2{
+  color:white;
+  opacity:1;
+  animation-name:subtitle;
+  font-family:'Audiowide';
+  text-shadow:1px 2px 2px black;
+  animation-duration:5s;
+}
+
+video#bgvid{
+  position:fixed;
+  top:50%;
+  left:50%;
+  min-width:100%;
+  min-height:100%;
+  width:auto;
+  height:auto;
+  z-index:-100;
+  -ms-transform:translateX(-50%) translateY(-50%);
+  -moz-transform:translateX(-50%) translateY(-50%);
+  -webkit-transform:translateX(-50%) translateY(-50%);
+  transform:translateX(-50%) translateY(-50%);
+  background:url(../../assets/img/background.jpg) no-repeat;
+  background-size:cover;
+}
+
+p{
+  font-family:'Archivo Narrow';
+  font-size:1.4em;
+}
+
+.section{
+  padding-top:70px;
+  padding-bottom:50px;
+  min-height:100vh;
+}
+
+.section h2{
+  margin:0px auto 40px auto;
+}
+
+.section p{
+  margin:30px;
+}
+
+.showhide{
+  overflow:auto;
+  margin:auto;
+  position:absolute;
+  height:53px;
+  width:120px;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+  z-index:1000;
+}
+
+.nopadding{
+  padding:0;
+}
+
+#aboutus{
+  background-color:lightblue;
+}
+
+#missions{
+  background-color:lightgreen;
+}
+
+#astronautes{
+  background-color:purple;
+}
+
+#astrobook{
+  background-color:lightgray;
+}
+
