@@ -157,3 +157,14 @@ body{
 
 #hud { width: 80%; margin: auto; }
 
+
+@keyframes title {
+  from{font-size:0em;}
+  to{font-size: 4em;}
+
+}
+@keyframes subtitle {
+  from{opacity:0;}
+  to{opacity: 1;}
+
+}
