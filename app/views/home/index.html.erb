@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Untitled</title>
+    <title>Webcup Space Station</title>
     <link rel="stylesheet" href="/home/assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Archivo+Narrow">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Audiowide">
@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/home/assets/css/menu.css">
     <link rel="stylesheet" href="/home/assets/css/jquery.sidr.dark.min.css">
     <link rel="stylesheet" href="/home/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/modal/dist/magnific-popup.css">
 </head>
 
 <body>
@@ -148,7 +149,28 @@
     <script src="/home/assets/js/menu.js"></script>
     <script src="/home/assets/js/scroll.js"></script>
     <script src="/hublot/lib/phaser/phaser.min.js"></script>
+    <script src="/assets/modal/dist/jquery.magnific-popup.min.js"></script>
     <script src="/hublot/build/game.js"></script>
+    <script src="/hud/build/game.js"></script>
+
+    <script type="text/javascript">
+        $('#modal').magnificPopup({
+          items: {
+              src: $('<div id="hud"></div>'),
+              type: 'inline'
+          },
+          callbacks: {
+            open: function() {
+              hud()
+            }
+          }
+        });
+    </script>
+
+    <style type="text/css">
+        #hud { width: 80%; margin: auto; }
+    </style>
+
 </body>
 
 </html>
