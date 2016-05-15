@@ -6,3 +6,4 @@ $(document).ready(function() {
       side: 'right'
     });
 });
+jQuery('#sidr-right #second li a').click(function() { jQuery.sidr('close', 'sidr-right'); });

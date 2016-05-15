@@ -1,5 +1,5 @@
 #home{
-  height:100vh;
+  min-height:100vh;
   background-image:url(../../assets/img/background.jpg);
   background-attachment:fixed;
   background-position:50% 50%;
@@ -49,30 +49,38 @@ p{
 }
 
 #aboutus{
-  background-color:lightblue;
-  background-image:url(../../assets/img/aboutus.png);
+  background-image:url(../../assets/img/aboutus.jpg);
   background-attachment:fixed;
   background-position:50% 50%;
   background-size:cover;
 }
 
 #missions{
-  background-color:lightgreen;
+  background-image:url(../../assets/img/missions.jpg);
+  background-attachment:fixed;
+  background-position:50% 50%;
+  background-size:cover;
 }
 
 #astronautes{
-  background-color:purple;
+  background-image:url(../../assets/img/astronautes.jpg);
+  background-attachment:fixed;
+  background-position:50% 50%;
+  background-size:cover;
 }
 
 #astrobook{
   background-color:lightgray;
+  background-image:url(../../assets/img/astrobook.jpg);
+  background-attachment:fixed;
+  background-position:50% 50%;
+  background-size:cover;
 }
 
 figure{
   margin:20px auto;
   padding:10px 10px 15px 10px;
-  background:lightgrey;
-  border:1px solid #dddddd;
+  background:rgba(211,211,211,0.2);
   text-align:center;
 }
 
@@ -80,7 +88,7 @@ figcaption{
   font-family:'Archivo Narrow';
   font-weight:300;
   font-size:1em;
-  color:#3d3d3d;
+  color:white;
   position:relative;
   top:0.5em;
 }
@@ -96,4 +104,56 @@ figcaption{
 body{
   color:white;
 }
+
+#appli{
+  background-image:url(../../assets/img/appli.jpg);
+  background-attachment:fixed;
+  background-position:50% 50%;
+  background-size:cover;
+}
+
+#entete{
+  height:400px;
+  background-image:url(../../assets/img/astrobook-big.jpg);
+  background-size:cover;
+}
+.defileParent{
+  position:fixed !important;
+  bottom:5px;
+  display:block;
+  margin:0 auto;
+  position:relative;
+  width:100%;
+  background-color:rgba(252,1,1,0.5);
+  z-index:1000;
+}
+.alert
+{
+   animation:linear alert 25s;
+   opacity:0;
+}
+
+.defile{
+  display:block;
+  text-align:center;
+  line-height: 35px;
+  height:35px;
+}
+
+#modal
+{
+  position: relative;
+  left:auto;
+  right: auto;
+  width: 130px;
+}
+
+ @keyframes alert {
+  from{opacity:0;}
+  to{opacity: 1;}
+ }
+
+
+
+#hud { width: 80%; margin: auto; }
 

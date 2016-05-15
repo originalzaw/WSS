@@ -125,7 +125,14 @@
   top:20px;
 }
 
-#appli{
-  background-color:turquoise;
+@media (min-width:767px) {
+  #logo{
+    display:none;
+  }
+}
+
+#sidr-right ul li a{
+  font-family:'Audiowide';
+  font-size:14px;
 }
 

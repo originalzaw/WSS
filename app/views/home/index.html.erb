@@ -13,13 +13,14 @@
     <link rel="stylesheet" href="/home/assets/css/jquery.sidr.dark.min.css">
     <link rel="stylesheet" href="/home/assets/css/styles.css">
     <link rel="stylesheet" href="/assets/modal/dist/magnific-popup.css">
+    <link rel="stylesheet" href="/home/assets/css/user.css">
 </head>
 
 <body>
     <div class="container-fluid">
-        <div class="row">
+        <div class="row" id="home">
             
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding" id="home">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding section">
              
         		<div id="slide" class="fixed">
         			<a id="right-menu" href="#right-menu">
@@ -39,7 +40,7 @@
                                             <li><a href="#hublot">HUBLOT</a></li>
                                             <li><a href="#astronautes" title="">LES ASTRONAUTES</a></li>
                           <li><a href="#astrobook">ASTROBOOK</a></li>
-                                            <li><a href="#appli">APP MOBILE</a></li>
+                                            <li><a href="#appli">APPLI</a></li>
                          </ul>
                         </nav>
                     </div>
@@ -59,9 +60,13 @@
                     </ul>
                    </nav>
         		</div>
-	
+	            <p class="text-center" id="logo"><img width="105" src="/home/assets/img/logo-white.png" alt="logo" />></p>
                 <h1 class="text-center">Webcup Space Station</h1>
                 <h2 class="text-center">Le Portail des Astronautes</h2>
+                <p class="text-center"><button class="btn btn-danger btn-lg alert" id="modal" role="button">Live stream</button></p>
+                <div class="defileParent alert">
+                    <span class="defile">!!! Alerte: Le personnel a bord de la station a du évacuer !!!</span>
+                </div>
             </div>
         </div>
         <div class="row section" id="aboutus">
@@ -130,15 +135,39 @@
         <div class="row section" id="astrobook">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12 section">
                 <h2 class="text-center">ASTROBOOK </h2>
+                <header id="entete" class="img-rounded"></header>
+                <div class="row">
+                    <div class="col-md-6 post-title">
+                        <h1>Photographie depuis Webcup Space Station</h1>
+                        <p class="author"><strong>John Steward</strong></p>
+                    </div>
+                    <div class="col-md-6 col-md-offset-0 post-body">
+                        <p>Il existe plusieurs moyens de ravitailler la station spatiale internationale. La première et la plus courrante est le vaisseau russe Progress. Il est utilisé pour les ravitaillements des stations Saliyut et Mir depuis 1978. L'autre moyen est la navette spatiale. Même si à chaque vol, des équipements sont transférés d'un vaisseau à l'autre, il a été nécessaire de développer un module récupérable. La Nasa a fait appel à l'industrie italienne pour fournir les MPLM (Leonardo, Raffaello et Donatello).</p>
 
-                <%= render 'astrobook' %>
-
+                        <p>Le MPLM est transporté dans la soute de la navette. Une fois qu'elle s'est amarrée à la station, le bras robotisé saisit le cargo et le conduit vers le collier d'amarrage le plus proche. Là, il est amarré et devient un module où le matiériel peut être chargé et déchargé. En fin de mission, il est récupéré et remis dans la soute. Si ces moyens sont ceux utilisés régulièrement, il existe d'autres moyens utilisés moins fréquemment. Il s'agit du cargo européen ATV (lancé tous les 18 mois) et du japonais HTV (lancé tous les 12 mois).</p>
+                        <p>A celà s'ajoutera le Cygnus et le Dragon développé par l'industrie privée américaine dans le cadre du programme COTS de la Nasa. Ceux-ci seront d'autant plus nécessaires lorsque la navette sera mise à la retraite.</p>
+                        <figure><img class="img-thumbnail" src="/home/assets/img/astrobook-small.jpg">
+                            <figcaption>Vue de l'Argentine depuis la station</figcaption>
+                        </figure>
+                        <p>Avoir une station spatiale habitée en permanence nécessite des moyens de ravitaillement réguliers. Ceux-ci doivent transporter les besoins de première nécessité comme la nourriture, l'eau, les réserves de gaz qui permettront tout aussi bien à renouveller l'air à bord de la station qu'à remonter son orbite, voire déplacer la station de son orbite afin d'éviter un obstacle croisant sa route comme un débris de satellite ou de fusée. Le ravitaillement ne se limite pas qu'aux vivres, mais aussi en matériel. Les cargos transportent également des équipements tels que des outils, scaphandres, pièces de rechange ou encore de nouvelles expériences. Et aussi d’avoir des belles prise de notre magnifique planète terre.</p>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="row section" id="appli">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12 section">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 section">
                 <h2 class="text-center">NOTRE APPLICATION MOBILE</h2>
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-md-push-7 col-sm-8 col-sm-offset-1 col-xs-12 col-xs-offset-0 phone-preview">
+                        <p class="text-center"> <img src="/home/assets/img/iphone.png" width="100%" class="device"></p>
+                    </div>
+                    <div class="col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-md-pull-3 col-sm-10 col-sm-offset-1 col-xs-12 get-it">
+                        <h1>Webcup Space Station - App officielle</h1>
+                        <p>Notre application est disponible gratuitement pour vous permettre de garder le contact avec la Webcup Space Station.</p>
+                        <p><a class="btn btn-warning btn-lg" role="button" href="#">Télécharger l'apk pour Android</a></p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -161,15 +190,11 @@
           },
           callbacks: {
             open: function() {
-              hud()
+              hud();
             }
           }
         });
     </script>
-
-    <style type="text/css">
-        #hud { width: 80%; margin: auto; }
-    </style>
 
 </body>
 
