@@ -1,7 +1,7 @@
 header{
   height:400px;
   background:url(photography_background.jpg) no-repeat center;
-  background-size:cover;
+  border:10px solid rgba(211,211,211,0.2);
 }
 
 .navbar-nav{
