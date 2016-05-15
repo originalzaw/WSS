@@ -1,5 +1,9 @@
 #home{
   height:100vh;
+  background-image:url(../../assets/img/background.jpg);
+  background-attachment:fixed;
+  background-position:50% 50%;
+  background-size:cover;
 }
 
 #home h1{
@@ -21,23 +25,6 @@
   animation-duration:5s;
 }
 
-video#bgvid{
-  position:fixed;
-  top:50%;
-  left:50%;
-  min-width:100%;
-  min-height:100%;
-  width:auto;
-  height:auto;
-  z-index:-100;
-  -ms-transform:translateX(-50%) translateY(-50%);
-  -moz-transform:translateX(-50%) translateY(-50%);
-  -webkit-transform:translateX(-50%) translateY(-50%);
-  transform:translateX(-50%) translateY(-50%);
-  background:url(../../assets/img/background.jpg) no-repeat;
-  background-size:cover;
-}
-
 p{
   font-family:'Archivo Narrow';
   font-size:1.4em;
@@ -57,27 +44,16 @@ p{
   margin:30px;
 }
 
-.showhide{
-  overflow:auto;
-  margin:auto;
-  position:absolute;
-  height:53px;
-  width:120px;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  margin-left:auto;
-  margin-right:auto;
-  z-index:1000;
-}
-
 .nopadding{
   padding:0;
 }
 
 #aboutus{
   background-color:lightblue;
+  background-image:url(../../assets/img/aboutus.png);
+  background-attachment:fixed;
+  background-position:50% 50%;
+  background-size:cover;
 }
 
 #missions{
@@ -90,5 +66,34 @@ p{
 
 #astrobook{
   background-color:lightgray;
+}
+
+figure{
+  margin:20px auto;
+  padding:10px 10px 15px 10px;
+  background:lightgrey;
+  border:1px solid #dddddd;
+  text-align:center;
+}
+
+figcaption{
+  font-family:'Archivo Narrow';
+  font-weight:300;
+  font-size:1em;
+  color:#3d3d3d;
+  position:relative;
+  top:0.5em;
+}
+
+.nomargin{
+  margin:0;
+}
+
+#hublot{
+  background-color:#070b14;
+}
+
+body{
+  color:white;
 }
 
